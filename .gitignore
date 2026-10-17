@@ -1,0 +1,21 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Audio corpora (data/ also holds dataset.py, so ignore only the splits and audio)
+data/train/
+data/val/
+data/test/
+*.wav
+*.mp3
+*.flac
+*.ogg
+*.m4a
+
+# Training outputs: keep the folders, not the weights/logs
+checkpoints/*
+!checkpoints/.gitkeep
+reports/*
+!reports/.gitkeep
